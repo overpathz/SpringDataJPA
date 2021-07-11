@@ -39,7 +39,7 @@ public class EmployeeController {
     public Employee deleteEmployee(@PathVariable("id") int id) {
         Employee deletedEmployee = employeeService.getEmployee(id);
         employeeService.deleteEmployee(id);
-        System.out.println("devtools, test, id: " + id);
+        System.out.println("[Log], test, id: " + id);
         return deletedEmployee;
     }
 
